@@ -13,7 +13,7 @@ fi
 
 python3 ~/.semicolon-python/rm-semicolon.py $filename
 
-python3 ~/.semicolon-python/$filename.shadow.py
+python3 $filename.shadow.py
 
 rm ~/.semicolon-python/$filename.shadow.py
 
