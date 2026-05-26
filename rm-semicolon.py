@@ -17,7 +17,7 @@ with open(filename, 'r') as f:
         if sym != ';':
             nfile += sym
 
-outputfile = os.path.join(home+'/.semicolon-python', f"{filename}.shadow.py")
+outputfile = os.path.join(home, f"{filename}.shadow.py")
 
 #open(outputfile, 'x')
 
