@@ -9,13 +9,13 @@ then
 	python3
 fi
 
-#touch ~/stuff/$filename.shadow.py
 
-python3 ~/stuff/semicolon-python/rm-semicolon.py $filename
 
-python3 ~/stuff/$filename.shadow.py
+python3 ~/.semicolon-python/rm-semicolon.py $filename
 
-#rm ~/stuff/$filename.shadow.py
+python3 ~/.semicolon-python/$filename.shadow.py
+
+rm ~/.semicolon-python/$filename.shadow.py
 
 
 
