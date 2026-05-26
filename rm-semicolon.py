@@ -17,7 +17,7 @@ with open(filename, 'r') as f:
         if sym != ';':
             nfile += sym
 
-outputfile = os.path.join(home, f"{filename}.shadow.py")
+outputfile = f"{filename}.shadow.py"
 
 #open(outputfile, 'x')
 
