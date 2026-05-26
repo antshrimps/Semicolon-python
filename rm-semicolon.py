@@ -9,7 +9,7 @@ home = os.path.expanduser('~')
 
 #print(filename)
 if '/' in filename:
-    filename = filename.replace("~", home)^
+    filename = filename.replace("~", home)
 
 with open(filename, 'r') as f:
     nfile = ""
@@ -17,7 +17,7 @@ with open(filename, 'r') as f:
         if sym != ';':
             nfile += sym
 
-outputfile = os.path.join(home+'/.semicolon-python', f"{filename}.shadow.py")
+outputfile = f"{filename}.shadow.py"
 
 #open(outputfile, 'x')
 
