@@ -2,8 +2,12 @@
 
 from sys import argv
 from pathlib import Path
+import os
 
 filename = argv[1]
+home = os.path.expanduser('~')
+
+print(filename)
 
 with open(filename, 'r') as f:
     nfile = ""
@@ -11,8 +15,11 @@ with open(filename, 'r') as f:
         if sym != ';':
             nfile += sym
 
-outputfile = Path(f"{filename}.shadow.py")
-outputfile.parent.mkdir(exist_ok=True, parents=True)
+outputfile = os.path.join(home+'/.semicolon-python', f"{filename}.shadow.py")
+
+#open(outputfile, 'x')
 
 with open(outputfile, 'w') as f:
     f.write(nfile)
+
+print(f"{outputfile} created")
