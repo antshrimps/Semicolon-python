@@ -15,7 +15,7 @@ python3 ~/.semicolon-python/rm-semicolon.py $filename
 
 python3 $filename.shadow.py
 
-rm ~/.semicolon-python/$filename.shadow.py
+rm $filename.shadow.py
 
 
 
