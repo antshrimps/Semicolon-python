@@ -7,7 +7,7 @@ import os
 filename = argv[1]
 home = os.path.expanduser('~')
 
-print(filename)
+#print(filename)
 
 with open(filename, 'r') as f:
     nfile = ""
@@ -22,4 +22,4 @@ outputfile = os.path.join(home+'/.semicolon-python', f"{filename}.shadow.py")
 with open(outputfile, 'w') as f:
     f.write(nfile)
 
-print(f"{outputfile} created")
+#print(f"{outputfile} created")
