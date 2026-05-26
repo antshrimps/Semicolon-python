@@ -11,7 +11,7 @@ with open(filename, 'r') as f:
         if sym != ';':
             nfile += sym
 
-outputfile = Path(f"~/.semicolon-python/{filename}.shadow.py")
+outputfile = Path(f"{filename}.shadow.py")
 outputfile.parent.mkdir(exist_ok=True, parents=True)
 
 with open(outputfile, 'w') as f:
