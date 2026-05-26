@@ -9,7 +9,7 @@ home = os.path.expanduser('~')
 
 #print(filename)
 if '/' in filename:
-    filename = filename.replace("~", home)^
+    filename = filename.replace("~", home)
 
 with open(filename, 'r') as f:
     nfile = ""
