@@ -6,7 +6,7 @@ filename=$1
 
 if [ -z $1 ]
 then 
-	python3
+	python3 ~/.semicolon-python/terminal.py
 fi
 
 
