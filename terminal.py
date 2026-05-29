@@ -5,7 +5,6 @@ con = Console()
 comm = None
 
 while True:
-    #print(f"##### {comm} #####")
     if comm == "quit" or comm == "exit":
         break
     comm = con.input("[magenta]>>> ")
