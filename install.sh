@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo if you are not on a debian based distro change the install in install.sh
+
 sudo apt install python3-rich
 
 mkdir -p ~/.semicolon-python/
