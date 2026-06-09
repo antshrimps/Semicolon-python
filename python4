@@ -6,12 +6,12 @@ filename=$1
 
 if [ -z $1 ]
 then 
-	python3 ~/.semicolon-python/terminal.py
+	python3-nos ~/.semicolon-python/terminal.py
 else
 
-	python3 ~/.semicolon-python/rm-semicolon.py $filename
+	python3-nos ~/.semicolon-python/rm-semicolon.py $filename
 
-	python3 $filename.shadow.py
+	python3-nos $filename.shadow.py
 
 	rm $filename.shadow.py
 
