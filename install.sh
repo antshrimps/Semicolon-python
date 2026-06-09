@@ -6,8 +6,6 @@ sudo apt install python3-rich
 
 mkdir -p ~/.semicolon-python/
 
-sudo cp python3 python3-nos
-
 cp terminal.py ~/.semicolon-python/
 
 cp rm-semicolon.py ~/.semicolon-python/
