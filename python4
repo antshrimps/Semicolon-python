@@ -1,0 +1,20 @@
+#!/bin/sh
+
+filename=$1
+
+#echo $filename
+
+if [ -z $1 ]
+then 
+	python3 ~/.semicolon-python/terminal.py
+else
+
+	python3 ~/.semicolon-python/rm-semicolon.py $filename
+
+	python3 $filename.shadow.py
+
+	rm $filename.shadow.py
+
+fi
+
+
