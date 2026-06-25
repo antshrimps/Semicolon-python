@@ -8,7 +8,11 @@ mkdir -p ~/.semicolon-python/
 
 cp terminal.py ~/.semicolon-python/
 
+mv rm-semicolon.py rm-semicolon.backup.py
 cp rm-semicolon.py ~/.semicolon-python/
-#mv rm-semicolon.py rm-semicolon.py.backup
 
 chmod a+x python4
+sudo mv python4 python4.backup
+
+echo moving file to /bin
+sudo mv python4.backup /bin/python4
