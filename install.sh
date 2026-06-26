@@ -14,5 +14,5 @@ mv rm-semicolon.py rm-semicolon.backup.py
 chmod a+x python4
 sudo mv python4 python4.backup
 
-echo moving file to /bin
+echo moving python4 to /bin
 sudo mv python4.backup /bin/python4
