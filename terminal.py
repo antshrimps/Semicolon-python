@@ -16,7 +16,7 @@ def main():
     global hlp, hlpc, hcom
     while True:
         
-        if hlp:
+        if hlp or hlpc:
             if hlpc:
                 hcomm = hcom
             else:
@@ -230,6 +230,7 @@ ELLIPSIS                  OPERATORS          \n")
                 Use help() to get the interactive help utility.\n\
                 Use help(str) for help on the str class.\n\
                 \n")
+
         if not hlp:
             comm = con.input("[magenta]>>> ")
             comm = comm.replace(';', '')
@@ -249,10 +250,10 @@ ELLIPSIS                  OPERATORS          \n")
             print('To quit this help utility and return to the interpreter,')
             print('enter "q", "quit" or "exit".')
             hlp = True
-        elif comm.startswith("help(") and comm.endswith(")"):
-            hcom = comm[len("help("):-1]
+        elif comm.startswith("help('") and comm.endswith("')"):
+            hcom = comm[len("help('"):-2]
             hlpc = True
-            print("HELP(    )")
+            
         else:
             try:
                 exec(comm)
