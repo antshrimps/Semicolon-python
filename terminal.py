@@ -253,7 +253,22 @@ ELLIPSIS                  OPERATORS          \n")
         elif comm.startswith("help('") and comm.endswith("')"):
             hcom = comm[len("help('"):-2]
             hlpc = True
-            
+        elif comm == "copyright":
+            print("Copyright (c) 2001-2024 Python Software Foundation.")
+            print("All Rights Reserved.\n")
+            print("Copyright (c) 2000 BeOpen.com.")
+            print("All Rights Reserved.")
+            ccom = input(" copyright line 1/11 (END) (press h for help or q to quit)")
+            if ccom == 'h':
+                rprint(f"[magenta]copyright.help could not be loaded")
+            elif ccom == 'q':
+                pass
+            else:
+                rprint("[magenta]An Error occured that could not be defined")
+        elif comm == "credits":
+            print("Thanks to CWI, CNRI, BeOpen, Zope Corporation, the Python Software\nFoundation, and a cast of thousands for supporting Python\ndevelopment.  See www.python.org for more information.")
+        elif comm == "license":
+            print("Type license() to see the full license text")
         else:
             try:
                 exec(comm)
